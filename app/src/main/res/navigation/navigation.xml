@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/favorites"
+    android:label=""
+    app:startDestination="@+id/favorites">
+
+
+    <fragment
+        android:id="@+id/favorites"
+        android:name="com.gonchar.project.bottomnavigationbar.favorite.FavoritesFragment"
+        android:label="favorites_fragment"
+        tools:layout="@layout/favorites_fragment" />
+    <fragment
+        android:id="@+id/navigation"
+        android:name="com.gonchar.project.bottomnavigationbar.navigation.NavigationFragment"
+        android:label="navigation_fragment"
+        tools:layout="@layout/navigation_fragment" />
+    <fragment
+        android:id="@+id/shared"
+        android:name="com.gonchar.project.bottomnavigationbar.share.shareFragment"
+        android:label="share_fragment"
+        tools:layout="@layout/share_fragment" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.gonchar.project.bottomnavigationbar.settings.Settings"
+        android:label="Settings" />
+</navigation>
